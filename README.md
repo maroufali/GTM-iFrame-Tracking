@@ -4,8 +4,8 @@
 <script>
 setTimeout(function(){
 var message = JSON.stringify ({
-	event: 'purchase',
-	id: '{{ event.id }}'
+event: 'purchase',
+id: '{{ event.id }}'
 });
 parent.postMessage (message, 'https://www.parenturl.com');
 }, 2500);
